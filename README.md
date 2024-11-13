@@ -51,34 +51,6 @@ Create a `venv` and install dependencies:
     $ pip install -r requirements.txt
 ``` 
 
-Configure the secrets in your repository : go to the repository site on `github / settings / Secrets and variables / Actions` and add a **new repository secrets**.
-
-Set all the secrests :
-
-* `AWS_ACCESS_KEY_ID`
-  
-* `AWS_SECRET_ACCESS_KEY`
-  
-* `AWS_REGION`
-  
-* `AWS_LAMBDA_ROLE_ARN`
-
-Also create a `.env` file with the following:
-
-```bash
-    # .env content'
-    AWS_ACCESS_KEY_ID="XXXXXXXXXXXXXX"
-    AWS_SECRET_ACCESS_KEY="aaaaaaaaaaaaaaaaaaaaaaaaaaa"
-    AWS_REGION="xx-xxxx-2"
-    AWS_LAMBDA_ROLE_ARN="arn:xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-``` 
-
-Configure your AWS credentials:
-
-```bash
-    aws configure
-```
-
 ### ❓️ How to use the project
 
 #### Statistics : Identifying Data Drifts
